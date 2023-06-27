@@ -1,11 +1,12 @@
 var listaDeCompras = [];
 listaDeCompras[3] = 'Tomates';
 listaDeCompras[1] = 'Lechuga';
+console.log(listaDeCompras[1]);
 
 var elementoDelArray = listaDeCompras[1];
 console.log(listaDeCompras.length);
 
-// Lenght
+// Length
 var nombres = ['Matias', 'Maria', 'Diego', 'Rosa'].length;
 console.log(nombres);
 
@@ -38,11 +39,15 @@ console.log(cumplenCondicion);
 // SHIFT -> elimina y devuelve el primer elmento del arreglo
 // UNSHIFT -> agrega elementos al inicio de un arreglo y devuelve la nueva longitud del array
 
+// SPLIT
 var palabra = 'Henri';
 var palabraSeparada = palabra.split('');
+
 palabraSeparada.pop(); //
 palabraSeparada.push('y');
 // console.log(palabraSeparada);
+
+// JOIN
 var palabraArreglada = palabraSeparada.join(''); // junta todos los caracteres, elimina por las ''
 console.log(palabraArreglada);
 
@@ -59,8 +64,22 @@ var numeros = [1, 2, 3, 4];
 
 
 // MAP -> recorre un arreglo y nos permite realizar modificaciones
-
+var numeros = [1, 2, 3, 4];
 var masUno = numeros.map((num) => {
     return num + 1;
 });
 console.log(masUno);
+
+// FOR
+var arr = [1, 2, 3, 4, 5];
+for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+
+// WHILE
+var arr = [];
+while (arr.length < 5) {
+   arr.push('Camilo');
+}
+console.log(arr);
