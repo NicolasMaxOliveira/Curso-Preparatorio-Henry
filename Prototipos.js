@@ -1,7 +1,9 @@
 //PROTOTIPOS: mecanismo por el cual todos los objetos o elementos de Javascript pueden extender
 //sus propiedades o métodos.
 
-//HERENCIA es el método por el cual los objetos tranfieren sus propiedades o métodos.
+//PROTOTIPOS son un mecanismo por el cual todos los objetos o elementos de javascript pueden extender sus propiedades o métodos. 
+//HERENCIA es el método por el cual los objetos globales extienden sus propiedades o métodos a cualquier tipo de dato.
+//En conclusión, los prototipos son una manera de ejercer la herencia.
 
 Array.prototype.mayoresQueTres = function() {
     var arregloModificado = [];
@@ -38,5 +40,8 @@ LatinoAmerica.prototype.agregarPais = function(pais) {
     this.paises.push(pais);
 };
 
-var continente = new LatinoAmerica();
+var continente = new LatinoAmerica()
 continente.agregarPais('Mexico')
+continente.agregarPais('Argentina')
+continente.agregarPais('Chile')
+console.log(continente.paises)

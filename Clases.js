@@ -1,3 +1,4 @@
+// Las clases son como plantillas o modelos que nos van a permitir crear un molde de propiedades o métodos.
 // FUNCION CONSTRUCTORA: Forma antigua de declarar las clases
 // Primera letra siempre CAPS
 function Auto(puertas, color, marca, año, ruedas) {
